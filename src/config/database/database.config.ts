@@ -1,6 +1,5 @@
-import { TypeOrmModuleAsyncOptions } from '@nestjs/typeorm';
 import { ConfigService } from '@nestjs/config';
-import { User } from 'src/user/user.entity';
+import { TypeOrmModuleAsyncOptions } from '@nestjs/typeorm';
 
 const databaseConfig: TypeOrmModuleAsyncOptions = {
   // imports: [ConfigModule], >> I Set ConfigModule {isGlobal: true}, so don't need to imports here or in any other modules
